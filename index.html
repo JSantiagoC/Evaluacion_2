@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Washing</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://images.vexels.com/media/users/3/146242/isolated/preview/09de694b01830a39d3d4c807d2cd34b3-coche-en-icono-de-tunel-de-lavado.png">
+            <h1 id="inicio">Car Washing Campus</h1>
+        </div>
+
+        <nav class="navbar">
+            <a href="#inicio">Home</a>
+            <a href="#formularioUsuarios">Clientes</a>
+            <a href="#formularioServicios">Servicios</a>
+            <a href="#formularioVentas">Venta de servicios</a>
+            <a href="#">Sistema de fidelización</a>
+            <a href="#contacto">Contactanos</a>
+        </nav>
+    </header>
+
+    <!-- Home -->
+    <div>
+        <h2>Bienvenido a la pagina de autolavado de CampusLands</h2>
+
+    </div>
+
+    <!-- Usuarios -->
+    <form action="" class="formulario" id="formularioUsuarios">
+        <h3>Añadir Cliente</h4>
+
+        <input id="documento" type="number" class="form-control mt-4" required="" placeholder="N° Documento">
+        <input id="nombres" type="text" class="form-control mt-2" required="" placeholder="Nombres">
+        <input id="apellidos" type="text" class="form-control mt-2" required="" placeholder="Apellidos">
+        <input id="placa" type="text" class="form-control mt-2" required="" placeholder="Placa del Auto">
+        <input id="tipo" type="text" class="form-control mt-2" required="" placeholder="Tipo de Auto">
+        <input id="correo" type="correo" class="form-control mt-2" required="" placeholder="Correo">
+        <input id="telefono" type="number" class="form-control mt-2" required="" placeholder="Telèfono">
+        <div class="botones">
+            <button id="agregarUsuario">Agregar</button>
+        </div>
+        <p>Para modificar los datos de un usuario, vuelva a llenar los campos del formulario y preseione el icono del lapìz que se encuentra en la parte derecha de la fila de donde se encuentra el usuario.</p>
+    </form>
+
+    <div class="tabla">
+        <table id="tablaUsuarios">
+            <tr class="datos">
+                <th>N° Documento</th>
+                <th>Nombres</th>
+                <th>Apellidos</th>
+                <th>Placa del Auto</th>
+                <th>Tipo de Auto</th>
+                <th>Correo Electronico</th>
+                <th>Telèfono</th>
+                <th><i class="ri-close-circle-line"></i></th>
+                <th><i class="ri-pencil-fill"></i></th>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Servicios -->
+    <form action="" class="formulario" id="formularioServicios">
+        <h3>Añadir Servicio</h4>
+
+        <input id="nombre" type="text" class="form-control mt-2" required="" placeholder="Servicio">
+        <input id="valor" type="number" class="form-control mt-2" required="" placeholder="Valor del servicio">
+        <input id="descripcion" type="text" class="form-control mt-2" required="" placeholder="Descripciòn del servicio">
+        <input id="puntosServicio" type="number" class="form-control mt-2" required="" placeholder="Puntos de fidelizaciòn">
+        <div class="botones">
+            <button id="agregarServicio">Agregar</button>
+        </div>
+    </form>
+
+    <div class="tabla">
+        <table id="tablaServicios">
+            <tr class="datos">
+                <th>N° Id</th>
+                <th>Servicio</th>
+                <th>Valor</th>
+                <th>Descripciòn</th>
+                <th>Puntos fidelización</th>
+                <th><i class="ri-close-circle-line"></i></th>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Ventas -->
+    <form action="" class="formulario" id="formularioVentas">
+        <h3>Ventas</h3>
+        
+        <select id="selectCliente" class="form-select form-select-lgmb-3" aria-label=".form-select-lg example">
+            <option selected>Selecciona el cliente</option>
+        </select>
+
+        <select id="selectServicio" class="form-select form-select-sm" aria-label=".form-select-sm example">
+            <option selected>Selecciona el servicio</option>
+        </select>
+        <div>
+            <button class="comprar">Comprar</button>
+        </div>
+    </form>
+
+    <div class="tabla">
+        <table id="tablaCompra">
+            <tr class="datos">
+                <th>Cliente</th>
+                <th>Servicio</th>
+                <th>Total a pagar</th>
+                <th>Puntos fidelización</th>
+                <th><i class="ri-close-circle-line"></i></th>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Puntos -->
+
+    <div class="tabla">
+        <table id="tablaPuntos">
+            <tr class="datos">
+                <th>Cliente</th>
+                <th>Puntos fidelización</th>
+                <th><i class="ri-close-circle-line"></i></th>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Footer -->
+    <footer id="contacto">
+        <div class="redes">
+            <h3>Redes Sociales</h3>
+            <a href="#"><i class="ri-whatsapp-line"></i> Whatsapp</a><br>
+            <a href="#"><i class="ri-instagram-line"></i> Instagram</a>
+        </div>
+
+        <div class="phone">
+            <h3>Contactanos</h3>
+            <a href="#"><i class="ri-phone-line"></i> +57 3173020470</a>
+        </div>
+    </footer>
+
+    <script src="./program.js"></script>
+</body>
+</html>

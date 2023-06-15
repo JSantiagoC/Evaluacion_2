@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Righteous&display=swap');
+
+*{
+    font-family: 'Righteous', cursive;
+}
+
+body{
+    margin: 0%;
+}
+
+header{
+    display: flex;
+    color: #ffffff;
+    background-color: #05BFDB;
+    padding: 15px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    display: flex;
+}
+
+h1{
+    margin-left: 30px;
+}
+
+.logo img{
+    width: 100px;
+    height: 100px;
+}
+
+.navbar a{
+    color: #ffffff;
+    margin-right: 40px;
+    font-size: 20px;
+    text-decoration: none;
+    transition: all .55s ease;
+}
+
+.navbar a:hover{
+    transition: all .3s ease;
+    color: #0A4D68;
+    border-bottom: 3px solid #0A4D68;
+}
+
+.botones{
+    text-align: center;
+    gap: 10px;
+}
+
+.formulario{
+    text-align: center;
+    padding: 15px;
+}
+
+.formulario input{
+    font-size: 20px;
+}
+
+.formulario p {
+    font-size: 20px;
+}
+
+#agregarUsuario{
+    margin-top: 30px;
+    font-family: 'Righteous', cursive;
+    color: #ffffff;
+    border-radius: 5px;
+    background-color: #0A4D68;
+    font-size: 15px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+#agregarUsuario:hover{
+    transition: all .3s ease;
+    background-color: #05BFDB;
+    color: black;
+}
+
+#agregarServicio{
+    margin-top: 30px;
+    font-family: 'Righteous', cursive;
+    color: #ffffff;
+    border-radius: 5px;
+    background-color: #0A4D68;
+    font-size: 15px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+#agregarServicio:hover{
+    transition: all .3s ease;
+    background-color: #05BFDB;
+    color: black;
+}
+
+.comprar{
+    margin-top: 30px;
+    font-family: 'Righteous', cursive;
+    color: #ffffff;
+    border-radius: 5px;
+    background-color: #0A4D68;
+    font-size: 15px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.comprar:hover{
+    transition: all .3s ease;
+    background-color: #05BFDB;
+    color: black;
+}
+
+button{
+    font-family: 'Righteous', cursive;
+    color: #FFF7E9;
+    background-color: transparent;
+    font-size: 20px;
+    border-color: transparent;
+    cursor: pointer;
+
+}
+
+button:hover{
+    transition: all .3s ease;
+    color: black;
+}
+
+table{
+    width: 100%;
+    border-spacing: 5px;
+    margin-top: 10px;
+}
+
+.tablaUsuarios{
+    display: grid;
+    grid-template-columns: 100%;
+    font-size: 20px;
+}
+
+th{
+    text-align: center;
+    padding: 10px;
+    font-family: 'Righteous', cursive;
+    color: #0A4D68;
+    background-color: #00FFCA;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+td{
+    text-align: center;
+    padding: 15px;
+    font-family: 'Righteous', cursive;
+    font-size: 15px;
+    background-color: #05BFDB ;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+footer{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    margin: 0%;
+    background-color: #0A4D68;
+    color: #FFF7E9;
+}
+
+.redes{
+    padding: 15px;
+    margin-left: 25%;
+}
+
+.redes a{
+    color: #FFF7E9;
+    text-decoration: none;
+}
+
+.phone{
+    padding: 15px;
+    margin-left: 25%;
+}
+
+.phone a{
+    color: #FFF7E9;
+    text-decoration: none;
+}
